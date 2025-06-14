@@ -78,7 +78,8 @@ async function main() {
         predictionOutput.textContent = resultado.toFixed(2);
 
         // Determinar y mostrar el estado de aprobación
-        if (resultado >= APPROVAL_THRESHOLD) {
+        const roundedResultado = parseFloat(resultado.toFixed(2)); // Redondear a 2 decimales para la comparación
+        if (roundedResultado >= APPROVAL_THRESHOLD) {
             statusOutput.textContent = "APROBADO";
             statusOutput.className = "status-approved"; // Clase para aprobado
         } else {
