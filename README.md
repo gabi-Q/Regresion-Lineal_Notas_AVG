@@ -20,6 +20,9 @@ Este proyecto es una aplicación web interactiva que utiliza un modelo de regres
 
 ## Cómo Usar
 
+Puedes acceder a la aplicación web directamente aquí: [Predictor de Notas (Pyodide)](https://gabi-q.github.io/Regresion-Lineal_Notas_AVG/)
+
+Si deseas ejecutarlo localmente:
 1. Clona o descarga este repositorio.
 2. Abre el archivo `index.html` en tu navegador web.
 3. Espera a que el motor de Python y el modelo se carguen (verás un indicador de carga).
