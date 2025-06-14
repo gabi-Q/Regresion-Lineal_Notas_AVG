@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor de Notas (Pyodide)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div id="loader-container">
+            <div class="loader"></div>
+            <p id="loader-text">Cargando el motor de Python en tu navegador...</p>
+        </div>
+
+        <div id="main-content" class="hidden">
+            <h1>🤖 Predictor de Promedio de Notas</h1>
+            <p>Ingresa tus notas y descubre tu promedio.</p>
+            
+            <div class="form-group">
+                <label for="nota1">Nota 1:</label>
+                <input type="number" id="nota1" placeholder="Ej: 15">
+            </div>
+
+            <div class="form-group">
+                <label for="nota2">Nota 2:</label>
+                <input type="number" id="nota2" placeholder="Ej: 12">
+            </div>
+
+            <div class="form-group">
+                <label for="nota3">Nota 3:</label>
+                <input type="number" id="nota3" placeholder="Ej: 18">
+            </div>
+
+            <button id="predict-button">Predecir Promedio</button>
+
+            <div id="result-container">
+                <h2>Resultado: <span id="prediction-output">--</span></h2>
+                <p id="status-output"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
